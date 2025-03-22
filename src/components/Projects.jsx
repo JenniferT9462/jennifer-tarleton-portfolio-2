@@ -47,6 +47,14 @@ const projects = [
     tech: ["Next.js", "Node.js", "Upstash"],
     image: "/plannerApp.png", 
   },
+  {
+    title: "Brew Haven",
+    description: "Brew Haven is an e-commerce site enabling users to browse products, add items to their cart, checkout cart, and signup/login to save their cart and order history.",
+    github: "https://github.com/JenniferT9462/coffee-shop-frontend",
+    deployed: "https://coffee-shop-frontend-eight.vercel.app/",
+    tech: ["MongoDB", "Express.js", "React", "Next.js", "Node.js"],
+    image: "/coffeeShop.png", 
+  },
 ];
 
 const Projects = () => {
