@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
  
-    <div className="flex h-screen bg-gradient-to-r from-purple-500 to-pink-500">
+    <div className="flex h-screen bg-gradient-to-r from-violet-500 to-teal-500">
       {/* Left Sidebar (Nav + Hero) */}
       <Hero/>
     
