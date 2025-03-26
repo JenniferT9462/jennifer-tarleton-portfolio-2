@@ -59,44 +59,49 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="text-white">
+    <section id="projects" className="text-white py-12 px-4">
       <div className="container mx-auto text-center mb-8">
         <h2 className="text-3xl font-bold mb-8">My Projects</h2>
         <div className="grid grid-cols-1 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="flex shadow-lg rounded-lg overflow-hidden"
+              // className="flex shadow-lg rounded-lg overflow-hidden"
+              className="flex flex-col md:flex-row shadow-lg rounded-lg overflow-hidden"
             >
               {/* Image on the left */}
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-1/2  h-full"
+                // className="w-1/2  h-full"
+                className="w-full md:w-1/2 h-60 object-cover"
               />
               {/* Content on the right */}
-              <div className="p-6 flex-1">
+              {/* <div className="p-6 flex-1"> */}
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-semibold">{project.title}</h3>
                 <p className="mt-2">{project.description}</p>
                 <div className="mt-4">
                   <p className="text-md font-semibold mb-2">Technologies:</p>
-                  <ul className="flex flex-wrap justify-center gap-2">
+                  {/* <ul className="flex flex-wrap justify-center gap-2"> */}
+                  <ul className="flex flex-wrap justify-center md:justify-start gap-2">
                     {project.tech.map((tech, idx) => (
                       <li
                         key={idx}
-                        className="bg-violet-600 px-2 py-1 rounded-full"
+                        className="bg-violet-600 px-2 py-1 rounded-full text-sm"
                       >
                         {tech}
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="flex space-x-4 justify-center">
+                {/* <div className="flex space-x-4 justify-center"> */}
+                <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-6">
                     <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-8 text-white hover:text-teal-400 bg-teal-700 p-2 rounded-md"
+                    className="mt-8 text-white hover:text-teal-400 bg-teal-700 p-2 rounded-md text-sm"
                     >
                     View Github Repo
                     </a>
@@ -104,7 +109,8 @@ const Projects = () => {
                     href={project.deployed}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-8 text-white hover:text-teal-400 bg-teal-700 p-2 rounded-md"
+                    // className="mt-8 text-white hover:text-teal-400 bg-teal-700 p-2 rounded-md"
+                    className="text-white hover:text-teal-400 bg-teal-700 py-2 px-4 rounded-md text-sm"
                     >
                     View Deployed Site
                     </a>
