@@ -49,7 +49,7 @@ const Hero = () => {
               <FaGithub size={28} />
             </a>
             <a
-              href="https://www.linkedin.com/in/jennifer-tarleton-11290350/"
+              href="https://www.linkedin.com/in/jennifer-leigh-tarleton-11290350/"
               target="_blank"
               className="text-white hover:text-gray-200"
             >
