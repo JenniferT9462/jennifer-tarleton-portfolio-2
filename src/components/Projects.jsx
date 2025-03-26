@@ -1,5 +1,3 @@
-
-
 // const Projects = () => {
 //     return (
 //       <section id="projects" className="py-20 text-white">
@@ -13,12 +11,12 @@
 //             </div>
 //           </div>
 //             {/* Add more project cards */}
-          
+
 //         </div>
 //       </section>
 //     )
 //   }
-  
+
 //   export default Projects
 
 const projects = [
@@ -29,31 +27,34 @@ const projects = [
     github: "https://github.com/JenniferT9462/Annas-World",
     deployed: "https://jennifert9462.github.io/Annas-World/",
     tech: ["HTML", "CSS", "Javascript"],
-    image: "/annasWorld.png", 
+    image: "/annasWorld.png",
   },
   {
     title: "Knitting App",
-    description: "A knitting app to manage knitting projects and get inspiration for future projects.",
+    description:
+      "A knitting app to manage knitting projects and get inspiration for future projects.",
     github: "https://github.com/JenniferT9462/The-Knitting-App",
     deployed: "https://jennifert9462.github.io/The-Knitting-App/",
     tech: ["HTML", "CSS", "Javascript"],
-    image: "/knittingApp.png", 
+    image: "/knittingApp.png",
   },
   {
     title: "Planner App",
-    description: "This project is a Planner App that is similar to a Bullet Journal. Users can login and be able to add events to a calender, add TODOs to a task list, track progress on tasks, track habits or activities that will be visualized with a pie graph and a mood tracker with journal entries.",
+    description:
+      "This project is a Planner App that is similar to a Bullet Journal. Users can login and be able to add events to a calender, add TODOs to a task list, track progress on tasks, track habits or activities that will be visualized with a pie graph and a mood tracker with journal entries.",
     github: "https://github.com/JenniferT9462/Planner-App",
     deployed: "https://capstone-demo-ruddy.vercel.app/",
     tech: ["Next.js", "Node.js", "Upstash"],
-    image: "/plannerApp.png", 
+    image: "/plannerApp.png",
   },
   {
     title: "Brew Haven",
-    description: "Brew Haven is an e-commerce site enabling users to browse products, add items to their cart, checkout cart, and signup/login to save their cart and order history.",
+    description:
+      "Brew Haven is an e-commerce site enabling users to browse products, add items to their cart, checkout cart, and signup/login to save their cart and order history.",
     github: "https://github.com/JenniferT9462/coffee-shop-frontend",
     deployed: "https://coffee-shop-frontend-eight.vercel.app/",
     tech: ["MongoDB", "Express.js", "React", "Next.js", "Node.js"],
-    image: "/coffeeShop.png", 
+    image: "/coffeeShop.png",
   },
 ];
 
@@ -95,7 +96,45 @@ const Projects = () => {
                     ))}
                   </ul>
                 </div>
-                {/* <div className="flex space-x-4 justify-center"> */}
+                <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 mt-4">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-teal-700 text-white hover:text-teal-400 px-4 py-2 rounded-md text-sm w-full md:w-auto"
+                  >
+                    View Github Repo
+                  </a>
+                  <a
+                    href={project.deployed}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-teal-700 text-white hover:text-teal-400 px-4 py-2 rounded-md text-sm w-full md:w-auto"
+                  >
+                    View Deployed Site
+                  </a>
+                </div>
+
+                {/* <div className="flex space-x-4 mt-4">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-teal-700 text-white hover:text-teal-400 px-4 py-2 rounded-md text-sm"
+                  >
+                    View Github Repo
+                  </a>
+                  <a
+                    href={project.deployed}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-teal-700 text-white hover:text-teal-400 px-4 py-2 rounded-md text-sm"
+                  >
+                    View Deployed Site
+                  </a>
+                </div> */}
+
+                {/* <div className="flex space-x-4 justify-center">
                 <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-6">
                     <a
                     href={project.github}
@@ -110,12 +149,11 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     // className="mt-8 text-white hover:text-teal-400 bg-teal-700 p-2 rounded-md"
-                    className="text-white hover:text-teal-400 bg-teal-700 py-2 px-4 rounded-md text-sm"
+                    className="text-white hover:text-teal-400 bg-teal-700 p-2 rounded-md text-sm"
                     >
                     View Deployed Site
                     </a>
-                </div>
-                
+                </div> */}
               </div>
             </div>
           ))}
@@ -126,5 +164,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-  
