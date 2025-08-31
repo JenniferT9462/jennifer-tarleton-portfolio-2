@@ -46,7 +46,7 @@ const About = () => {
             
             <div className="flex justify-center">
               <a 
-                href="/JT-Resume-2025.pdf" 
+                href="/Jennifer_Tarleton_Resume.pdf" 
                 download 
                 className="px-4 py-1 bg-violet-500 text-white font-bold rounded-lg shadow-md hover:bg-violet-600 transition"
               >
